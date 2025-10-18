@@ -1,44 +1,113 @@
 [versions]
-agp = "8.13.0"
-kotlin = "2.2.20"
-coreKtx = "1.17.0"
-junit = "4.13.2"
-junitVersion = "1.3.0"
-espressoCore = "3.7.0"
-lifecycleRuntimeKtx = "2.9.4"
+# Activity Compose - Compose support for Activities
 activityCompose = "1.11.0"
+# Android Gradle Plugin version
+android-gradle-plugin = "8.13.0"
+# Compose BOM - Bill of Materials for Compose dependencies
 composeBom = "2025.10.00"
-# Version of Detekt library
+# AndroidX Core KTX - Kotlin extensions for Android core APIs
+coreKtx = "1.17.0"
+# Detekt - Static code analysis for Kotlin
 detekt = "1.23.8"
-# Version of Detekt Rules Compose library
+# Detekt Rules Compose - Compose-specific rules for Detekt
 detekt-rules-compose = "1.4.0"
+# Espresso Core - UI testing framework
+espressoCore = "3.7.0"
 # JVM target version
 jvm-target = "21"
+# JUnit - Unit testing framework
+junit = "4.13.2"
+# JUnit Version - AndroidX test JUnit version
+junitVersion = "1.3.0"
+# Kotlin - Kotlin language version
+kotlin = "2.2.20"
+# Kotlin Serialization - Kotlin serialization plugin version
+kotlinSerialization = "2.2.20"
+# Kotlinx Serialization Core - Kotlin serialization runtime
+kotlinxSerializationCore = "1.9.0"
+# Lifecycle Runtime KTX - Lifecycle-aware components with Kotlin extensions
+lifecycleRuntimeKtx = "2.9.4"
+# Lifecycle ViewModel Navigation - ViewModel integration for Navigation 3
+lifecycleViewmodelNavigation = "2.10.0-alpha05"
+# Material 3 Adaptive Navigation - Adaptive navigation components for Material 3
+material3AdaptiveNavigation = "1.3.0-alpha01"
+# Navigation Core - Navigation 3 core components
+navigationCore = "1.0.0-alpha11"
 
 [libraries]
-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
-androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+# Activity Compose - Integration between Activity and Compose
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+# Compose BOM - Ensures all Compose libraries use compatible versions
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
-androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
-androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
-androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
-androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
-androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
-androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+# Compose Material3 - Material Design 3 components for Compose
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
-# Detekt formatting rules library
+# Compose UI - Core UI components for Compose
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+# Compose UI Graphics - Graphics primitives for Compose UI
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+# Compose UI Test JUnit4 - JUnit4 integration for Compose UI testing
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+# Compose UI Test Manifest - Test manifest for Compose UI testing
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+# Compose UI Tooling - Development tools for Compose UI
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+# Compose UI Tooling Preview - Preview support for Compose UI development
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+# AndroidX Core KTX - Kotlin extensions for Android framework APIs
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+# Espresso Core - Android UI testing framework
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+# AndroidX JUnit - AndroidX wrapper for JUnit testing
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+# Lifecycle Runtime KTX - Lifecycle-aware components with coroutines support
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+# Lifecycle ViewModel Navigation3 - ViewModel integration for Navigation 3
+androidx-lifecycle-viewmodel-navigation3 = { module = "androidx.lifecycle:lifecycle-viewmodel-navigation3", version.ref = "lifecycleViewmodelNavigation" }
+# Material 3 Adaptive Navigation - Adaptive navigation support for Material 3
+androidx-material3-adaptive-navigation3 = { group = "androidx.compose.material3.adaptive", name = "adaptive-navigation3", version.ref = "material3AdaptiveNavigation" }
+# Navigation 3 Runtime - Core runtime for Navigation 3
+androidx-navigation3-runtime = { module = "androidx.navigation3:navigation3-runtime", version.ref = "navigationCore" }
+# Navigation 3 UI - UI components for Navigation 3
+androidx-navigation3-ui = { module = "androidx.navigation3:navigation3-ui", version.ref = "navigationCore" }
+# Detekt Formatting - Code formatting rules for Detekt
 detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
-# Detekt rules for Compose library
+# Detekt Rules Compose - Compose-specific linting rules for Detekt
 detekt-rules-compose = { module = "ru.kode:detekt-rules-compose", version.ref = "detekt-rules-compose" }
+# JUnit - Standard JUnit testing framework
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+# Kotlinx Serialization Core - Runtime library for Kotlin serialization
+kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinxSerializationCore" }
+
+[bundles]
+# Compose bundle - All essential Compose UI dependencies
+androidx-compose = [
+    "androidx-compose-ui",
+    "androidx-compose-ui-graphics",
+    "androidx-compose-ui-tooling",
+    "androidx-compose-ui-tooling-preview",
+    "androidx-compose-material3"
+]
+
+# Navigation bundle - All Navigation 3 dependencies including serialization and adaptive support
+androidx-navigation = [
+    "androidx-navigation3-runtime",
+    "androidx-navigation3-ui",
+    "androidx-lifecycle-viewmodel-navigation3",
+    "kotlinx-serialization-core",
+    "androidx-material3-adaptive-navigation3"
+]
 
 [plugins]
-android-application = { id = "com.android.application", version.ref = "agp" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-# Detekt plugin for static code analysis
+# Android Application plugin - For building Android applications
+android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
+# Android Library plugin - For building Android libraries
+android-library = { id = "com.android.library", version.ref = "android-gradle-plugin" }
+# Detekt plugin - Static code analysis for Kotlin
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+# Kotlin Serialization plugin - Enables Kotlin serialization support
+jetbrains-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinSerialization"}
+# Kotlin Android plugin - Kotlin support for Android projects
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+# Kotlin Compose plugin - Kotlin compiler plugin for Compose
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
