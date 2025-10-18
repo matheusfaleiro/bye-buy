@@ -1,4 +1,5 @@
 # Bye-Buy 🛍️
+[![Build Status](https://app.bitrise.io/app/72fedc78-b56c-45ff-804d-19c02dc14ec1/status.svg?token=Suy3MF4X1EFUCN20v6-u9A&branch=main)](https://app.bitrise.io/app/72fedc78-b56c-45ff-804d-19c02dc14ec1)
 
 An Android application that empowers consumers to make conscious and
 informed purchasing decisions when shopping online.
