@@ -9,7 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import dev.matheusfaleiro.byebuy.ui.theme.ByeBuyTheme
-import dev.matheusfaleiro.corenavigation.presentation.graph.NavigationDisplay
+import dev.matheusfaleiro.corenavigation.presentation.graph.ByeBuyNavigationGraph
 
 class ByeBuyActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +20,7 @@ class ByeBuyActivity : ComponentActivity() {
         setContent {
             ByeBuyTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { paddingValues ->
-                    NavigationDisplay(modifier = Modifier.padding(paddingValues = paddingValues))
+                    ByeBuyNavigationGraph(modifier = Modifier.padding(paddingValues = paddingValues))
                 }
             }
         }
