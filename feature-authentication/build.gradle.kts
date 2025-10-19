@@ -10,10 +10,10 @@ plugins {
 }
 
 android {
-    namespace = "dev.matheusfaleiro.corenavigation"
+    namespace = "dev.matheusfaleiro.featureauthentication"
 
     compileSdk {
-        version = release(36)
+        version = release(version = 36)
     }
 
     defaultConfig {
@@ -52,8 +52,6 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
-
-    implementation(libs.bundles.androidx.navigation)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
