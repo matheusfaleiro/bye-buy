@@ -12,7 +12,7 @@ android {
     namespace = "dev.matheusfaleiro.byebuy"
 
     compileSdk {
-        version = release(36)
+        version = release(version = 36)
     }
 
     defaultConfig {
@@ -46,6 +46,8 @@ android {
 }
 
 dependencies {
+    implementation(projects.coreNavigation)
+
     implementation(platform(libs.androidx.compose.bom))
 
     implementation(libs.androidx.core.ktx)
